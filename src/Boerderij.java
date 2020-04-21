@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 //bron: https://www.onlinetutorialspoint.com/java/oops/what-is-association-in-java.html
 
-public class Main {
-    public static void main(String args[]){
+public class Boerderij {
+    public static void main(String[] args){
     Koe henkie = new Koe("henkie", 2, "niet", "wel" );
     System.out.println(henkie.toString());
     henkie.setRijpVoorSlacht("wel"); //Uiteindelijk is de koe wel rijp voor slacht
