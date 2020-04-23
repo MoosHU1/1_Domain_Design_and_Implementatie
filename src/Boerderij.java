@@ -4,12 +4,19 @@ import java.util.List;
 
 public class Boerderij {
     public static void main(String[] args){
+
+    Weide weide1 = new Weide("weide1");
     Koe henkie = new Koe("henkie", 2, "niet", "wel" );
+    henkie.setWeide(weide1);
+
     System.out.println(henkie.toString());
     henkie.setRijpVoorSlacht("wel"); //Uiteindelijk is de koe wel rijp voor slacht
     System.out.println(henkie.toString());
 
+    Weide weide2 = new Weide("weide2");
     Kip jantje = new Kip("Jantje",10,"niet",3);
+    jantje.setWeide(weide2);
+
     System.out.println("\n"+jantje.toString());
     jantje.setEierenGelegdVandaag(6);
     System.out.println(jantje.toString());

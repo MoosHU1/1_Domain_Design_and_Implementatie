@@ -1,10 +1,19 @@
 public class Kip extends Dier implements Eten {
 
 	private int eierenGelegdVandaag;
+	private Weide weide;
 
 	public Kip(String nm, int lftd, String rijp, int ei){
 		super(nm, lftd, rijp);
 		eierenGelegdVandaag = ei;
+	}
+
+	public void setWeide(Weide w) {
+		this.weide = w;
+	}
+
+	public Weide getWeide() {
+		return weide;
 	}
 
 
@@ -21,11 +30,11 @@ public class Kip extends Dier implements Eten {
 
 	@Override
 	public void eet() {
-
+		System.out.println("pik pik pik");
 	}
 
 	public String toString() {
-		return "De Kip "+getNaam()+" is "+getLeeftijd()+" jaar oud, is "+getRijpVoorSlacht()+" rijp voor slacht en heeft "+getEierenGelegdVandaag()+" " +
+		return "De Kip "+getNaam()+" in "+getWeide()+" is "+getLeeftijd()+" jaar oud, is "+getRijpVoorSlacht()+" rijp voor slacht en heeft "+getEierenGelegdVandaag()+" " +
 				"eieren gelegd vandaag";
 	}
 
